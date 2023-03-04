@@ -15,6 +15,9 @@
 		DA84336129B3762100CB87C6 /* CSVParser in Frameworks */ = {isa = PBXBuildFile; productRef = DA84336029B3762100CB87C6 /* CSVParser */; };
 		DA84336829B397CF00CB87C6 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84336729B397CF00CB87C6 /* ContactListViewController.swift */; };
 		DA84336B29B397E900CB87C6 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84336A29B397E900CB87C6 /* RootRouter.swift */; };
+		DA84336D29B3997000CB87C6 /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84336C29B3997000CB87C6 /* ContactListViewModel.swift */; };
+		DA84336F29B3997A00CB87C6 /* ContactListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84336E29B3997A00CB87C6 /* ContactListRouter.swift */; };
+		DA84337229B399B000CB87C6 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84337129B399B000CB87C6 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		DA84335E29B3761000CB87C6 /* CSVParser */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CSVParser; sourceTree = "<group>"; };
 		DA84336729B397CF00CB87C6 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		DA84336A29B397E900CB87C6 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		DA84336C29B3997000CB87C6 /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		DA84336E29B3997A00CB87C6 /* ContactListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListRouter.swift; sourceTree = "<group>"; };
+		DA84337129B399B000CB87C6 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		DA84332D29B3748800CB87C6 /* CSVContacts */ = {
 			isa = PBXGroup;
 			children = (
+				DA84337029B399A100CB87C6 /* Models */,
 				DA84336229B3979400CB87C6 /* Modules */,
 				DA84332E29B3748800CB87C6 /* AppDelegate.swift */,
 				DA84333029B3748800CB87C6 /* SceneDelegate.swift */,
@@ -138,6 +145,7 @@
 		DA84336529B397A700CB87C6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DA84336C29B3997000CB87C6 /* ContactListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 		DA84336629B397B200CB87C6 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				DA84336E29B3997A00CB87C6 /* ContactListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -155,6 +164,14 @@
 				DA84336A29B397E900CB87C6 /* RootRouter.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		DA84337029B399A100CB87C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA84337129B399B000CB87C6 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA84336D29B3997000CB87C6 /* ContactListViewModel.swift in Sources */,
 				DA84336B29B397E900CB87C6 /* RootRouter.swift in Sources */,
 				DA84332F29B3748800CB87C6 /* AppDelegate.swift in Sources */,
 				DA84333129B3748800CB87C6 /* SceneDelegate.swift in Sources */,
 				DA84336829B397CF00CB87C6 /* ContactListViewController.swift in Sources */,
+				DA84336F29B3997A00CB87C6 /* ContactListRouter.swift in Sources */,
+				DA84337229B399B000CB87C6 /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
