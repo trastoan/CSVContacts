@@ -31,12 +31,12 @@ struct ContactService: ContactServiceProtocol {
         guard let url = Bundle.main.url(forResource: contactFileName, withExtension: fileExtension) else {
             return Fail(error: ContactServiceErrors.resourceNotFound).eraseToAnyPublisher()
         }
-        let parser = CSVParser(url: url)
+        let parser = CSVParser(url: url, lineBreaker: "\r\n")
 
         guard let contacts = try? parser.decode(type: Contact.self) else {
             return Fail(error: ContactServiceErrors.decodeError).eraseToAnyPublisher()
         }
-
+        
         return Just(contacts)
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
