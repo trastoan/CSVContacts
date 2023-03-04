@@ -26,6 +26,9 @@
 		DA84338229B3A4E900CB87C6 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338129B3A4E900CB87C6 /* UIFontExtension.swift */; };
 		DA84338429B3A62500CB87C6 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338329B3A62500CB87C6 /* UITableViewExtensions.swift */; };
 		DA84338629B3A64600CB87C6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338529B3A64600CB87C6 /* UIViewExtensions.swift */; };
+		DA84338D29B3CC0100CB87C6 /* ContactDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338C29B3CC0100CB87C6 /* ContactDetailsRouter.swift */; };
+		DA84338F29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338E29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift */; };
+		DA84339129B3CC1900CB87C6 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339029B3CC1900CB87C6 /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		DA84338129B3A4E900CB87C6 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		DA84338329B3A62500CB87C6 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		DA84338529B3A64600CB87C6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		DA84338C29B3CC0100CB87C6 /* ContactDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsRouter.swift; sourceTree = "<group>"; };
+		DA84338E29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
+		DA84339029B3CC1900CB87C6 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 			children = (
 				DA84336929B397DB00CB87C6 /* Root */,
 				DA84336329B3979B00CB87C6 /* ContactList */,
+				DA84338729B3C6EC00CB87C6 /* ContactDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -228,6 +235,48 @@
 				DA84338529B3A64600CB87C6 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA84338729B3C6EC00CB87C6 /* ContactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DA84338B29B3C71100CB87C6 /* Router */,
+				DA84338A29B3C70800CB87C6 /* ViewModels */,
+				DA84338929B3C70300CB87C6 /* Views */,
+				DA84338829B3C6FD00CB87C6 /* Models */,
+			);
+			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+		DA84338829B3C6FD00CB87C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA84338929B3C70300CB87C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA84339029B3CC1900CB87C6 /* ContactDetailsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA84338A29B3C70800CB87C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DA84338E29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DA84338B29B3C71100CB87C6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DA84338C29B3CC0100CB87C6 /* ContactDetailsRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,8 +388,11 @@
 				DA84337E29B3A0E200CB87C6 /* SequenceExtension.swift in Sources */,
 				DA84338429B3A62500CB87C6 /* UITableViewExtensions.swift in Sources */,
 				DA84332F29B3748800CB87C6 /* AppDelegate.swift in Sources */,
+				DA84338D29B3CC0100CB87C6 /* ContactDetailsRouter.swift in Sources */,
+				DA84338F29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift in Sources */,
 				DA84333129B3748800CB87C6 /* SceneDelegate.swift in Sources */,
 				DA84337B29B3A09400CB87C6 /* ContactSection.swift in Sources */,
+				DA84339129B3CC1900CB87C6 /* ContactDetailsViewController.swift in Sources */,
 				DA84337529B39AEB00CB87C6 /* ContactService.swift in Sources */,
 				DA84338629B3A64600CB87C6 /* UIViewExtensions.swift in Sources */,
 				DA84338029B3A43900CB87C6 /* ContactListTableViewCell.swift in Sources */,

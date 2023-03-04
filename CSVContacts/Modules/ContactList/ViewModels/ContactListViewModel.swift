@@ -59,7 +59,7 @@ final class ContactListViewModel: ContactListModel {
 
     private func organizeContacts(contacts: [Contact]) {
         for contact in contacts {
-            let firstLetter = contact.nameComponents.formatted(.name(style: .long)).first!
+            let firstLetter = contact.nameComponents.formatted().first!
             if let contactSection = sections.first(where: {$0.letter == firstLetter }) {
                 contactSection.contacts.append(contact)
             } else {
