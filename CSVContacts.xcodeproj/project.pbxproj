@@ -12,19 +12,11 @@
 		DA84333829B3748900CB87C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84333729B3748900CB87C6 /* Assets.xcassets */; };
 		DA84333B29B3748900CB87C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA84333929B3748900CB87C6 /* LaunchScreen.storyboard */; };
 		DA84334629B3748900CB87C6 /* CSVContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84334529B3748900CB87C6 /* CSVContactsTests.swift */; };
-		DA84335029B3748900CB87C6 /* CSVContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */; };
-		DA84335229B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */; };
+		DA84336129B3762100CB87C6 /* CSVParser in Frameworks */ = {isa = PBXBuildFile; productRef = DA84336029B3762100CB87C6 /* CSVParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DA84334229B3748900CB87C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA84332329B3748800CB87C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA84332A29B3748800CB87C6;
-			remoteInfo = CSVContacts;
-		};
-		DA84334C29B3748900CB87C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA84332329B3748800CB87C6 /* Project object */;
 			proxyType = 1;
@@ -42,9 +34,7 @@
 		DA84333C29B3748900CB87C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA84334129B3748900CB87C6 /* CSVContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84334529B3748900CB87C6 /* CSVContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsTests.swift; sourceTree = "<group>"; };
-		DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsUITests.swift; sourceTree = "<group>"; };
-		DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA84335E29B3761000CB87C6 /* CSVParser */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CSVParser; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA84336129B3762100CB87C6 /* CSVParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA84333E29B3748900CB87C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA84334829B3748900CB87C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,10 +59,11 @@
 		DA84332229B3748800CB87C6 = {
 			isa = PBXGroup;
 			children = (
+				DA84335E29B3761000CB87C6 /* CSVParser */,
 				DA84332D29B3748800CB87C6 /* CSVContacts */,
 				DA84334429B3748900CB87C6 /* CSVContactsTests */,
-				DA84334E29B3748900CB87C6 /* CSVContactsUITests */,
 				DA84332C29B3748800CB87C6 /* Products */,
+				DA84335F29B3762100CB87C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +72,6 @@
 			children = (
 				DA84332B29B3748800CB87C6 /* CSVContacts.app */,
 				DA84334129B3748900CB87C6 /* CSVContactsTests.xctest */,
-				DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,13 +96,11 @@
 			path = CSVContactsTests;
 			sourceTree = "<group>";
 		};
-		DA84334E29B3748900CB87C6 /* CSVContactsUITests */ = {
+		DA84335F29B3762100CB87C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */,
-				DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */,
 			);
-			path = CSVContactsUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +119,9 @@
 			dependencies = (
 			);
 			name = CSVContacts;
+			packageProductDependencies = (
+				DA84336029B3762100CB87C6 /* CSVParser */,
+			);
 			productName = CSVContacts;
 			productReference = DA84332B29B3748800CB87C6 /* CSVContacts.app */;
 			productType = "com.apple.product-type.application";
@@ -159,24 +144,6 @@
 			productReference = DA84334129B3748900CB87C6 /* CSVContactsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA84334A29B3748900CB87C6 /* CSVContactsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA84335B29B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContactsUITests" */;
-			buildPhases = (
-				DA84334729B3748900CB87C6 /* Sources */,
-				DA84334829B3748900CB87C6 /* Frameworks */,
-				DA84334929B3748900CB87C6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA84334D29B3748900CB87C6 /* PBXTargetDependency */,
-			);
-			name = CSVContactsUITests;
-			productName = CSVContactsUITests;
-			productReference = DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +158,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					DA84334029B3748900CB87C6 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = DA84332A29B3748800CB87C6;
-					};
-					DA84334A29B3748900CB87C6 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = DA84332A29B3748800CB87C6;
 					};
@@ -215,7 +178,6 @@
 			targets = (
 				DA84332A29B3748800CB87C6 /* CSVContacts */,
 				DA84334029B3748900CB87C6 /* CSVContactsTests */,
-				DA84334A29B3748900CB87C6 /* CSVContactsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,13 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA84333F29B3748900CB87C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA84334929B3748900CB87C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,15 +219,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA84334729B3748900CB87C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA84335229B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift in Sources */,
-				DA84335029B3748900CB87C6 /* CSVContactsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -280,11 +226,6 @@
 			isa = PBXTargetDependency;
 			target = DA84332A29B3748800CB87C6 /* CSVContacts */;
 			targetProxy = DA84334229B3748900CB87C6 /* PBXContainerItemProxy */;
-		};
-		DA84334D29B3748900CB87C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA84332A29B3748800CB87C6 /* CSVContacts */;
-			targetProxy = DA84334C29B3748900CB87C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,40 +445,6 @@
 			};
 			name = Release;
 		};
-		DA84335C29B3748900CB87C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CSVContacts;
-			};
-			name = Debug;
-		};
-		DA84335D29B3748900CB87C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CSVContacts;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,16 +475,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA84335B29B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContactsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA84335C29B3748900CB87C6 /* Debug */,
-				DA84335D29B3748900CB87C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA84336029B3762100CB87C6 /* CSVParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CSVParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA84332329B3748800CB87C6 /* Project object */;
 }
