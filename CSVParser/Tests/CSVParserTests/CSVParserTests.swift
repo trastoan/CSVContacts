@@ -40,8 +40,26 @@ final class CSVParserTests: XCTestCase {
 
         let secondContact = contacts[1]
         XCTAssertEqual(secondContact.name, "Mary App")
-        XCTAssertEqual(secondContact.address, "Mongolia")
+        XCTAssertEqual(secondContact.address, "")
         XCTAssertEqual(secondContact.company, "Opsy")
         XCTAssertEqual(secondContact.phone, "504-845-1427")
+    }
+
+    func testValueForLineReturnsNilWhenNoDataIsPresent() throws {
+        let propertiesLine = CSVLine(lineNumber: 0, data: ["phone", "name"])
+        let lineWithNil = CSVLine(lineNumber: 1, data: ["230-232-1231", nil])
+
+        let sut = CSVContainer(propertiesList: propertiesLine)
+
+        XCTAssertNil(sut.value(line: lineWithNil, forKey: "name"))
+        XCTAssertEqual(sut.value(line: lineWithNil, forKey: "phone"), "230-232-1231")
+    }
+
+    func testValueForPropertyNotOnLineWillReturnNil() throws {
+        let propertiesLine = CSVLine(lineNumber: 0, data: ["phone", "name", "country"])
+        let lineWithNil = CSVLine(lineNumber: 1, data: ["230-232-1231", nil])
+
+        let sut = CSVContainer(propertiesList: propertiesLine)
+        XCTAssertNil(sut.value(line: lineWithNil, forKey: "country"))
     }
 }
