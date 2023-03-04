@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA84332F29B3748800CB87C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84332E29B3748800CB87C6 /* AppDelegate.swift */; };
+		DA84333129B3748800CB87C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84333029B3748800CB87C6 /* SceneDelegate.swift */; };
+		DA84333829B3748900CB87C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84333729B3748900CB87C6 /* Assets.xcassets */; };
+		DA84333B29B3748900CB87C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA84333929B3748900CB87C6 /* LaunchScreen.storyboard */; };
+		DA84334629B3748900CB87C6 /* CSVContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84334529B3748900CB87C6 /* CSVContactsTests.swift */; };
+		DA84335029B3748900CB87C6 /* CSVContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */; };
+		DA84335229B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA84334229B3748900CB87C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA84332329B3748800CB87C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA84332A29B3748800CB87C6;
+			remoteInfo = CSVContacts;
+		};
+		DA84334C29B3748900CB87C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA84332329B3748800CB87C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA84332A29B3748800CB87C6;
+			remoteInfo = CSVContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA84332B29B3748800CB87C6 /* CSVContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA84332E29B3748800CB87C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA84333029B3748800CB87C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA84333729B3748900CB87C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA84333A29B3748900CB87C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA84333C29B3748900CB87C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA84334129B3748900CB87C6 /* CSVContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA84334529B3748900CB87C6 /* CSVContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsTests.swift; sourceTree = "<group>"; };
+		DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsUITests.swift; sourceTree = "<group>"; };
+		DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA84332829B3748800CB87C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA84333E29B3748900CB87C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA84334829B3748900CB87C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA84332229B3748800CB87C6 = {
+			isa = PBXGroup;
+			children = (
+				DA84332D29B3748800CB87C6 /* CSVContacts */,
+				DA84334429B3748900CB87C6 /* CSVContactsTests */,
+				DA84334E29B3748900CB87C6 /* CSVContactsUITests */,
+				DA84332C29B3748800CB87C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA84332C29B3748800CB87C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA84332B29B3748800CB87C6 /* CSVContacts.app */,
+				DA84334129B3748900CB87C6 /* CSVContactsTests.xctest */,
+				DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA84332D29B3748800CB87C6 /* CSVContacts */ = {
+			isa = PBXGroup;
+			children = (
+				DA84332E29B3748800CB87C6 /* AppDelegate.swift */,
+				DA84333029B3748800CB87C6 /* SceneDelegate.swift */,
+				DA84333729B3748900CB87C6 /* Assets.xcassets */,
+				DA84333929B3748900CB87C6 /* LaunchScreen.storyboard */,
+				DA84333C29B3748900CB87C6 /* Info.plist */,
+			);
+			path = CSVContacts;
+			sourceTree = "<group>";
+		};
+		DA84334429B3748900CB87C6 /* CSVContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA84334529B3748900CB87C6 /* CSVContactsTests.swift */,
+			);
+			path = CSVContactsTests;
+			sourceTree = "<group>";
+		};
+		DA84334E29B3748900CB87C6 /* CSVContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */,
+				DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */,
+			);
+			path = CSVContactsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA84332A29B3748800CB87C6 /* CSVContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA84335529B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContacts" */;
+			buildPhases = (
+				DA84332729B3748800CB87C6 /* Sources */,
+				DA84332829B3748800CB87C6 /* Frameworks */,
+				DA84332929B3748800CB87C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSVContacts;
+			productName = CSVContacts;
+			productReference = DA84332B29B3748800CB87C6 /* CSVContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA84334029B3748900CB87C6 /* CSVContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA84335829B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContactsTests" */;
+			buildPhases = (
+				DA84333D29B3748900CB87C6 /* Sources */,
+				DA84333E29B3748900CB87C6 /* Frameworks */,
+				DA84333F29B3748900CB87C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA84334329B3748900CB87C6 /* PBXTargetDependency */,
+			);
+			name = CSVContactsTests;
+			productName = CSVContactsTests;
+			productReference = DA84334129B3748900CB87C6 /* CSVContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA84334A29B3748900CB87C6 /* CSVContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA84335B29B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContactsUITests" */;
+			buildPhases = (
+				DA84334729B3748900CB87C6 /* Sources */,
+				DA84334829B3748900CB87C6 /* Frameworks */,
+				DA84334929B3748900CB87C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA84334D29B3748900CB87C6 /* PBXTargetDependency */,
+			);
+			name = CSVContactsUITests;
+			productName = CSVContactsUITests;
+			productReference = DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA84332329B3748800CB87C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DA84332A29B3748800CB87C6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DA84334029B3748900CB87C6 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DA84332A29B3748800CB87C6;
+					};
+					DA84334A29B3748900CB87C6 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DA84332A29B3748800CB87C6;
+					};
+				};
+			};
+			buildConfigurationList = DA84332629B3748800CB87C6 /* Build configuration list for PBXProject "CSVContacts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA84332229B3748800CB87C6;
+			productRefGroup = DA84332C29B3748800CB87C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA84332A29B3748800CB87C6 /* CSVContacts */,
+				DA84334029B3748900CB87C6 /* CSVContactsTests */,
+				DA84334A29B3748900CB87C6 /* CSVContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA84332929B3748800CB87C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA84333B29B3748900CB87C6 /* LaunchScreen.storyboard in Resources */,
+				DA84333829B3748900CB87C6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA84333F29B3748900CB87C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA84334929B3748900CB87C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA84332729B3748800CB87C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA84332F29B3748800CB87C6 /* AppDelegate.swift in Sources */,
+				DA84333129B3748800CB87C6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA84333D29B3748900CB87C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA84334629B3748900CB87C6 /* CSVContactsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA84334729B3748900CB87C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA84335229B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift in Sources */,
+				DA84335029B3748900CB87C6 /* CSVContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA84334329B3748900CB87C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA84332A29B3748800CB87C6 /* CSVContacts */;
+			targetProxy = DA84334229B3748900CB87C6 /* PBXContainerItemProxy */;
+		};
+		DA84334D29B3748900CB87C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA84332A29B3748800CB87C6 /* CSVContacts */;
+			targetProxy = DA84334C29B3748900CB87C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA84333929B3748900CB87C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA84333A29B3748900CB87C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA84335329B3748900CB87C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA84335429B3748900CB87C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA84335629B3748900CB87C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSVContacts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA84335729B3748900CB87C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSVContacts/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA84335929B3748900CB87C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSVContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CSVContacts";
+			};
+			name = Debug;
+		};
+		DA84335A29B3748900CB87C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSVContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CSVContacts";
+			};
+			name = Release;
+		};
+		DA84335C29B3748900CB87C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CSVContacts;
+			};
+			name = Debug;
+		};
+		DA84335D29B3748900CB87C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuri.CSVContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CSVContacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA84332629B3748800CB87C6 /* Build configuration list for PBXProject "CSVContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA84335329B3748900CB87C6 /* Debug */,
+				DA84335429B3748900CB87C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA84335529B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA84335629B3748900CB87C6 /* Debug */,
+				DA84335729B3748900CB87C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA84335829B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA84335929B3748900CB87C6 /* Debug */,
+				DA84335A29B3748900CB87C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA84335B29B3748900CB87C6 /* Build configuration list for PBXNativeTarget "CSVContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA84335C29B3748900CB87C6 /* Debug */,
+				DA84335D29B3748900CB87C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA84332329B3748800CB87C6 /* Project object */;
+}
