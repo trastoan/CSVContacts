@@ -5,4 +5,9 @@
 //  Created by Yuri on 04/03/23.
 //
 
-import Foundation
+import UIKit
+
+protocol ContactListRouterProtocol {
+    static func assembleModule() -> UIViewController
+    func presentDetailsFor(contact: Contact)
+}

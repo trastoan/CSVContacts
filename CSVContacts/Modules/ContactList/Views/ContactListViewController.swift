@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ContactListView {
+    var model: ContactListModel! { get }
+}
+
 class ContactListViewController: UIViewController {
 
     override func viewDidLoad() {
