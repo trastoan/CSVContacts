@@ -80,6 +80,8 @@ public struct CSVParser {
             currentString.append(char)
         }
 
+        data.append(currentString.isEmpty ? nil : currentString)
+
         return data
     }
 }

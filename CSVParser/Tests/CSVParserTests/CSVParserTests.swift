@@ -20,16 +20,28 @@ final class CSVParserTests: XCTestCase {
     }
 
     func testParserGivesCorrectValues() throws {
-        let bundle = Bundle(for: CSVParserTests.self)
-        guard let resourceURL = bundle.url(forResource: "test", withExtension: "csv") else {
-            XCTFail("File not found")
-            return
-        }
+        let url = URL(fileURLWithPath: #file)
+        let directory = url.deletingLastPathComponent()
+        let res = directory.appendingPathComponent("Resources")
+        let resourceURL = res.appendingPathComponent("test.csv")
+        print(resourceURL.absoluteString)
 
-        let sut = CSVParser(url: resourceURL)
+        let sut = CSVParser(url: resourceURL, lineBreaker: "\r\n")
 
         let contacts = try sut.decode(type: Contact.self)
 
         XCTAssertEqual(contacts.count, 2)
+
+        let firstContact = contacts[0]
+        XCTAssertEqual(firstContact.name, "John")
+        XCTAssertEqual(firstContact.address, "Some Street,Somewhere,Some Country")
+        XCTAssertEqual(firstContact.company, "The Company")
+        XCTAssertEqual(firstContact.phone, "213-133-218")
+
+        let secondContact = contacts[1]
+        XCTAssertEqual(secondContact.name, "Mary App")
+        XCTAssertEqual(secondContact.address, "Mongolia")
+        XCTAssertEqual(secondContact.company, "Opsy")
+        XCTAssertEqual(secondContact.phone, "504-845-1427")
     }
 }

@@ -23,9 +23,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "CSVParserTests",
-            dependencies: ["CSVParser"],
-            resources: [
-                .process("test.csv")
-            ]),
+            dependencies: ["CSVParser"]),
     ]
 )
