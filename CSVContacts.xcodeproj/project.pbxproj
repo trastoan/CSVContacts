@@ -29,6 +29,12 @@
 		DA84338D29B3CC0100CB87C6 /* ContactDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338C29B3CC0100CB87C6 /* ContactDetailsRouter.swift */; };
 		DA84338F29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84338E29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift */; };
 		DA84339129B3CC1900CB87C6 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339029B3CC1900CB87C6 /* ContactDetailsViewController.swift */; };
+		DA84339329B3CE9600CB87C6 /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339229B3CE9600CB87C6 /* FormModel.swift */; };
+		DA84339529B3CFD700CB87C6 /* FormComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339429B3CFD700CB87C6 /* FormComponents.swift */; };
+		DA84339729B3D33000CB87C6 /* UICollectionViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339629B3D32F00CB87C6 /* UICollectionViewCellExtensions.swift */; };
+		DA84339929B3D49000CB87C6 /* FormTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339829B3D49000CB87C6 /* FormTextCollectionViewCell.swift */; };
+		DA84339B29B3D69600CB87C6 /* ContactDetailsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339A29B3D69600CB87C6 /* ContactDetailsLayout.swift */; };
+		DA84339D29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339C29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		DA84338C29B3CC0100CB87C6 /* ContactDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsRouter.swift; sourceTree = "<group>"; };
 		DA84338E29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
 		DA84339029B3CC1900CB87C6 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		DA84339229B3CE9600CB87C6 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		DA84339429B3CFD700CB87C6 /* FormComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComponents.swift; sourceTree = "<group>"; };
+		DA84339629B3D32F00CB87C6 /* UICollectionViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtensions.swift; sourceTree = "<group>"; };
+		DA84339829B3D49000CB87C6 /* FormTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA84339A29B3D69600CB87C6 /* ContactDetailsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsLayout.swift; sourceTree = "<group>"; };
+		DA84339C29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTitleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +245,7 @@
 				DA84338129B3A4E900CB87C6 /* UIFontExtension.swift */,
 				DA84338329B3A62500CB87C6 /* UITableViewExtensions.swift */,
 				DA84338529B3A64600CB87C6 /* UIViewExtensions.swift */,
+				DA84339629B3D32F00CB87C6 /* UICollectionViewCellExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +264,8 @@
 		DA84338829B3C6FD00CB87C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA84339229B3CE9600CB87C6 /* FormModel.swift */,
+				DA84339429B3CFD700CB87C6 /* FormComponents.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				DA84339029B3CC1900CB87C6 /* ContactDetailsViewController.swift */,
+				DA84339A29B3D69600CB87C6 /* ContactDetailsLayout.swift */,
+				DA84339829B3D49000CB87C6 /* FormTextCollectionViewCell.swift */,
+				DA84339C29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,19 +404,25 @@
 				DA84336D29B3997000CB87C6 /* ContactListViewModel.swift in Sources */,
 				DA84336B29B397E900CB87C6 /* RootRouter.swift in Sources */,
 				DA84337E29B3A0E200CB87C6 /* SequenceExtension.swift in Sources */,
+				DA84339329B3CE9600CB87C6 /* FormModel.swift in Sources */,
+				DA84339729B3D33000CB87C6 /* UICollectionViewCellExtensions.swift in Sources */,
 				DA84338429B3A62500CB87C6 /* UITableViewExtensions.swift in Sources */,
 				DA84332F29B3748800CB87C6 /* AppDelegate.swift in Sources */,
 				DA84338D29B3CC0100CB87C6 /* ContactDetailsRouter.swift in Sources */,
+				DA84339529B3CFD700CB87C6 /* FormComponents.swift in Sources */,
 				DA84338F29B3CC0D00CB87C6 /* ContactDetailsViewModel.swift in Sources */,
 				DA84333129B3748800CB87C6 /* SceneDelegate.swift in Sources */,
 				DA84337B29B3A09400CB87C6 /* ContactSection.swift in Sources */,
 				DA84339129B3CC1900CB87C6 /* ContactDetailsViewController.swift in Sources */,
 				DA84337529B39AEB00CB87C6 /* ContactService.swift in Sources */,
+				DA84339D29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift in Sources */,
 				DA84338629B3A64600CB87C6 /* UIViewExtensions.swift in Sources */,
 				DA84338029B3A43900CB87C6 /* ContactListTableViewCell.swift in Sources */,
 				DA84336829B397CF00CB87C6 /* ContactListViewController.swift in Sources */,
+				DA84339B29B3D69600CB87C6 /* ContactDetailsLayout.swift in Sources */,
 				DA84336F29B3997A00CB87C6 /* ContactListRouter.swift in Sources */,
 				DA84338229B3A4E900CB87C6 /* UIFontExtension.swift in Sources */,
+				DA84339929B3D49000CB87C6 /* FormTextCollectionViewCell.swift in Sources */,
 				DA84337229B399B000CB87C6 /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
