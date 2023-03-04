@@ -42,7 +42,7 @@ final class ContactListViewModel: ContactListModel {
     }
 
     func contact(for index: ContactIndex) -> Contact {
-        return Contact(firstName: "", lastName: "", company: "", address: "", city: "", county: "", state: "", zip: "", email: "", phone: [])
+        return sections[index.section].contacts[index.row]
     }
 
     func titleFor(section: Int) -> String {

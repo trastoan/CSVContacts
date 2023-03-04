@@ -13,8 +13,18 @@ protocol ContactListRouterProtocol {
 }
 
 final class ContactListRouter: ContactListRouterProtocol {
+    private weak var viewController: UIViewController?
+
     static func assembleModule() -> UIViewController {
-        return ContactListViewController()
+        let router = ContactListRouter()
+        let model = ContactListViewModel(router: router)
+        let controller = ContactListViewController()
+
+        controller.model = model
+        router.viewController = controller
+
+        let nav = UINavigationController(rootViewController: controller)
+        return nav
     }
 
     func presentDetailsFor(contact: Contact) {}
