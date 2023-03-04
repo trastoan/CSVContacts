@@ -2,10 +2,11 @@ import XCTest
 @testable import CSVParser
 
 final class CSVParserTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(CSVParser().text, "Hello, World!")
+    func testParseThrowsErrorOnFileNotFound() throws {
+        guard let wrongPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            XCTFail()
+            return
+        }
+        let sut = CSVParser(url: wrongPath)
     }
 }
