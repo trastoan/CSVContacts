@@ -22,7 +22,7 @@ public struct CSVParser {
         self.lineBreaker = lineBreaker
     }
 
-    public func decode<T: CSVDecodable>() throws -> [T]  {
+    public func decode<T: CSVDecodable>(type: T.Type) throws -> [T]  {
         let contents = try String(contentsOf: url)
         var values = [T]()
         var lines = CSVToLines(csv: contents)
