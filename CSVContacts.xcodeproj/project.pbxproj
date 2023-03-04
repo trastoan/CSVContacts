@@ -14,6 +14,7 @@
 		DA84334629B3748900CB87C6 /* CSVContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84334529B3748900CB87C6 /* CSVContactsTests.swift */; };
 		DA84335029B3748900CB87C6 /* CSVContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */; };
 		DA84335229B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */; };
+		DA84336129B3762100CB87C6 /* CSVParser in Frameworks */ = {isa = PBXBuildFile; productRef = DA84336029B3762100CB87C6 /* CSVParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		DA84334B29B3748900CB87C6 /* CSVContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA84334F29B3748900CB87C6 /* CSVContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsUITests.swift; sourceTree = "<group>"; };
 		DA84335129B3748900CB87C6 /* CSVContactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVContactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA84335E29B3761000CB87C6 /* CSVParser */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CSVParser; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA84336129B3762100CB87C6 /* CSVParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +78,12 @@
 		DA84332229B3748800CB87C6 = {
 			isa = PBXGroup;
 			children = (
+				DA84335E29B3761000CB87C6 /* CSVParser */,
 				DA84332D29B3748800CB87C6 /* CSVContacts */,
 				DA84334429B3748900CB87C6 /* CSVContactsTests */,
 				DA84334E29B3748900CB87C6 /* CSVContactsUITests */,
 				DA84332C29B3748800CB87C6 /* Products */,
+				DA84335F29B3762100CB87C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +126,13 @@
 			path = CSVContactsUITests;
 			sourceTree = "<group>";
 		};
+		DA84335F29B3762100CB87C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +149,9 @@
 			dependencies = (
 			);
 			name = CSVContacts;
+			packageProductDependencies = (
+				DA84336029B3762100CB87C6 /* CSVParser */,
+			);
 			productName = CSVContacts;
 			productReference = DA84332B29B3748800CB87C6 /* CSVContacts.app */;
 			productType = "com.apple.product-type.application";
@@ -578,6 +593,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA84336029B3762100CB87C6 /* CSVParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CSVParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA84332329B3748800CB87C6 /* Project object */;
 }
