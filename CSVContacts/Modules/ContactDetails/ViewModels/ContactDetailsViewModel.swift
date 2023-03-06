@@ -21,6 +21,7 @@ protocol ContactDetailsModel {
 class ContactDetailsViewModel: ContactDetailsModel {
     let router: ContactDetailsRouterProtocol
     var contact: Contact
+    var contactService: ContactServiceProtocol
 
     var editableContact: EditableContact
     var editButtonTitle: String { isEditing ? "Done" : "Edit"}
@@ -29,18 +30,25 @@ class ContactDetailsViewModel: ContactDetailsModel {
     private (set) var content: [FormSectionComponent] = []
     private var isEditing = false
 
-    init(router: ContactDetailsRouterProtocol = ContactDetailsRouter(),
-         contact: Contact) {
-        self.router = router
+    init(contact: Contact,
+         router: ContactDetailsRouterProtocol = ContactDetailsRouter(),
+         contactService: ContactServiceProtocol = ContactService()) {
         self.contact = contact
+        self.router = router
+        self.contactService = contactService
         self.editableContact = EditableContact(from: contact)
         self.content = buildForm()
     }
 
     func toggleEditMode() {
         if isEditing {
-            contact = editableContact.contact
-            //Save changes
+            do {
+                try contactService.updateContact(oldContact: contact, updated: editableContact.contact)
+                contact = editableContact.contact
+            } catch {
+                //Add alert
+                self.editableContact = EditableContact(from: contact)
+            }
         }
         isEditing.toggle()
         content = buildForm()

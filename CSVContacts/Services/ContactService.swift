@@ -11,6 +11,7 @@ import Foundation
 
 protocol ContactServiceProtocol {
     func getContacts() -> AnyPublisher<[Contact], Error>
+    func updateContact(oldContact: Contact, updated: Contact) throws
 }
 
 enum ContactServiceErrors: Error {
@@ -46,6 +47,28 @@ struct ContactService: ContactServiceProtocol {
         return Just(contacts)
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
+    }
+
+    func updateContact(oldContact: Contact, updated: Contact) throws {
+        var contacts = [Contact]()
+
+        if let savedContacts = retrieveEditedContacts() {
+            contacts = savedContacts
+        } else {
+            contacts = retrievePreloadedContacts() ?? []
+        }
+
+        contacts.removeAll(where: { $0 == oldContact })
+        contacts.append(updated)
+
+        try saveContacts(contacts: contacts)
+    }
+
+    private func saveContacts(contacts: [Contact]) throws {
+        let data = try JSONEncoder().encode(contacts)
+        let url = savedContactsDirectory.appendingPathExtension(contactFileName)
+
+        try data.write(to: url)
     }
 
     private func retrieveEditedContacts() -> [Contact]? {

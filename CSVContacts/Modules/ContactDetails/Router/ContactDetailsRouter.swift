@@ -18,7 +18,7 @@ class ContactDetailsRouter: ContactDetailsRouterProtocol {
     static func assembleModule(with contact: Contact) -> UIViewController {
         let router = ContactDetailsRouter()
         let controller = ContactDetailsViewController()
-        let model = ContactDetailsViewModel(router: router, contact: contact)
+        let model = ContactDetailsViewModel(contact: contact, router: router)
 
         controller.model = model
         router.viewController = controller
