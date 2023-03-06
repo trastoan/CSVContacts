@@ -60,12 +60,26 @@ final class ContactListViewModelTests: XCTestCase {
     func testContactsOrganization() {
         let expectation = expectation(description: "Details for contact")
 
-        let cancellable = sut.hasFinishedFetch.sink { _ in
-            XCTAssertEqual(self.sut.titleFor(section: 0), "C")
-            XCTAssertEqual(self.sut.titleFor(section: 1), "J")
+        let expectedContactOne = ContactsMock.mocks[1]
+        let expectedContactTwo = ContactsMock.mocks[0]
 
-            XCTAssertEqual(self.sut.contact(for: (0,0)), ContactsMock.mocks[1])
-            XCTAssertEqual(self.sut.contact(for: (1,0)), ContactsMock.mocks[0])
+        let expectedFirstLetter = String(expectedContactOne.nameComponents.formatted().first!).capitalized
+        let expectedSecondLetter = String(expectedContactTwo.nameComponents.formatted().first!).capitalized
+
+        let cancellable = sut.hasFinishedFetch.sink { _ in
+            if expectedFirstLetter < expectedSecondLetter {
+                XCTAssertEqual(self.sut.titleFor(section: 0), expectedFirstLetter)
+                XCTAssertEqual(self.sut.titleFor(section: 1), expectedSecondLetter)
+
+                XCTAssertEqual(self.sut.contact(for: (0,0)), expectedContactOne)
+                XCTAssertEqual(self.sut.contact(for: (1,0)), expectedContactTwo)
+            } else {
+                XCTAssertEqual(self.sut.titleFor(section: 0), expectedSecondLetter)
+                XCTAssertEqual(self.sut.titleFor(section: 1), expectedFirstLetter)
+
+                XCTAssertEqual(self.sut.contact(for: (0,0)), expectedContactTwo)
+                XCTAssertEqual(self.sut.contact(for: (1,0)), expectedContactOne)
+            }
 
             expectation.fulfill()
         }
