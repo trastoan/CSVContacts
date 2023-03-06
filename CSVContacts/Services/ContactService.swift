@@ -23,10 +23,15 @@ struct ContactService: ContactServiceProtocol {
     private let contactFileName: String
     private let fileExtension: String
     private let savedContactsDirectory: URL
+    private let bundle: Bundle
 
-    init(fileName: String = "sample_contacts", fileExtension: String = "csv", directory: URL? = nil) {
+    init(fileName: String = "sample_contacts",
+         fileExtension: String = "csv",
+         directory: URL? = nil,
+         bundle: Bundle = Bundle.main) {
         self.contactFileName = fileName
         self.fileExtension = fileExtension
+        self.bundle = bundle
 
         if let directory {
             self.savedContactsDirectory = directory
@@ -79,7 +84,7 @@ struct ContactService: ContactServiceProtocol {
     }
 
     private func retrievePreloadedContacts() -> [Contact]? {
-        guard let url = Bundle.main.url(forResource: contactFileName, withExtension: fileExtension) else {
+        guard let url = bundle.url(forResource: contactFileName, withExtension: fileExtension) else {
             return nil
         }
 
