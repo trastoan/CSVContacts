@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class FormTextCollectionViewCell: UICollectionViewCell {
     private let infoLabel: UILabel = {
@@ -41,26 +42,42 @@ class FormTextCollectionViewCell: UICollectionViewCell {
         return stack
     }()
 
+    var formItem: TextFieldFormComponent!
+    var cancellables = Set<AnyCancellable>()
+
     override func prepareForReuse() {
         textField.text = ""
         textField.placeholder = ""
         infoLabel.text = ""
+        formItem = nil
+        cancellables = []
     }
 
     func bind(_ item: FormComponent) {
         guard let textItem = item as? TextFieldFormComponent else { return }
-        textField.placeholder = textItem.placeholder
-        textField.isUserInteractionEnabled = textItem.editable
-        textField.keyboardType = textItem.keyboardType
+        formItem = textItem
 
-        infoLabel.text = textItem.placeholder
+        textField.placeholder = formItem.placeholder
+        textField.isUserInteractionEnabled = formItem.editable
+        textField.keyboardType = formItem.keyboardType
 
-        if textItem.defaultValue != "" {
-            textField.text = textItem.defaultValue
-        }
+        infoLabel.text = formItem.placeholder
+        textField.text = formItem.subject.value
 
         setupSubviews()
         setupConstraints()
+        observeTextField()
+    }
+
+    private func observeTextField() {
+        NotificationCenter
+            .default
+            .publisher(for: UITextField.textDidChangeNotification, object: textField)
+            .compactMap{ ($0.object as? UITextField)?.text }
+            .sink { [weak self] text in
+                self?.formItem.subject.send(text)
+            }
+            .store(in: &cancellables)
     }
 
     private func setupSubviews() {

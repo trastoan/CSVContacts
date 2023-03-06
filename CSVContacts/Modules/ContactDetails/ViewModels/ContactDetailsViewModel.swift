@@ -20,7 +20,9 @@ protocol ContactDetailsModel {
 
 class ContactDetailsViewModel: ContactDetailsModel {
     let router: ContactDetailsRouterProtocol
-    let contact: Contact
+    var contact: Contact
+
+    var editableContact: EditableContact
     var editButtonTitle: String { isEditing ? "Done" : "Edit"}
     var leftButtonTitle: String { isEditing ? "Cancel" : "Close" }
 
@@ -31,10 +33,15 @@ class ContactDetailsViewModel: ContactDetailsModel {
          contact: Contact) {
         self.router = router
         self.contact = contact
-        content = buildForm()
+        self.editableContact = EditableContact(from: contact)
+        self.content = buildForm()
     }
 
     func toggleEditMode() {
+        if isEditing {
+            contact = editableContact.contact
+            //Save changes
+        }
         isEditing.toggle()
         content = buildForm()
     }
@@ -42,6 +49,8 @@ class ContactDetailsViewModel: ContactDetailsModel {
     func cancelAction() {
         if isEditing {
             isEditing.toggle()
+            self.editableContact = EditableContact(from: contact)
+            content = buildForm()
         } else {
             router.dismiss()
         }
@@ -51,8 +60,8 @@ class ContactDetailsViewModel: ContactDetailsModel {
         var formSections = [FormSectionComponent]()
 
         let nameSection = FormSectionComponent(items: [
-            TextFieldFormComponent(placeholder: "First Name", defaultValue: contact.firstName, editable: isEditing),
-            TextFieldFormComponent(placeholder: "Last Name", defaultValue: contact.lastName, editable: isEditing),
+            TextFieldFormComponent(placeholder: "First Name", defaultValue: editableContact.firstName, editable: isEditing),
+            TextFieldFormComponent(placeholder: "Last Name", defaultValue: editableContact.lastName, editable: isEditing),
         ])
 
         let titleNameSection = FormSectionComponent(items: [
@@ -64,22 +73,22 @@ class ContactDetailsViewModel: ContactDetailsModel {
         formSections = [
             firstSection,
             FormSectionComponent(items: [
-                TextFieldFormComponent(placeholder: "Address", defaultValue: contact.address, editable: isEditing),
-                TextFieldFormComponent(placeholder: "County", defaultValue: contact.county, editable: isEditing),
-                TextFieldFormComponent(placeholder: "City", defaultValue: contact.city, editable: isEditing),
-                TextFieldFormComponent(placeholder: "State", defaultValue: contact.state, editable: isEditing),
-                TextFieldFormComponent(placeholder: "Zip", defaultValue: contact.zip, editable: isEditing),
+                TextFieldFormComponent(placeholder: "Address", defaultValue: editableContact.address, editable: isEditing),
+                TextFieldFormComponent(placeholder: "County", defaultValue: editableContact.county, editable: isEditing),
+                TextFieldFormComponent(placeholder: "City", defaultValue: editableContact.city, editable: isEditing),
+                TextFieldFormComponent(placeholder: "State", defaultValue: editableContact.state, editable: isEditing),
+                TextFieldFormComponent(placeholder: "Zip", defaultValue: editableContact.zip, editable: isEditing),
             ]),
             FormSectionComponent(items: [
-                TextFieldFormComponent(placeholder: "Company", defaultValue: contact.company, editable: isEditing),
-                TextFieldFormComponent(placeholder: "Email", keyboardType: .emailAddress, defaultValue: contact.email, editable: isEditing)
+                TextFieldFormComponent(placeholder: "Company", defaultValue: editableContact.company, editable: isEditing),
+                TextFieldFormComponent(placeholder: "Email", keyboardType: .emailAddress, defaultValue: editableContact.email, editable: isEditing)
             ]),
         ]
 
         var phoneSection = [FormComponent]()
-        for phone in contact.phone {
+        for phone in editableContact.phone {
             phoneSection.append(
-                TextFieldFormComponent(placeholder: "Phone", defaultValue: phone)
+                TextFieldFormComponent(placeholder: "Phone", defaultValue: phone, editable: isEditing)
             )
         }
         formSections.insert(FormSectionComponent(items: phoneSection), at: 1)

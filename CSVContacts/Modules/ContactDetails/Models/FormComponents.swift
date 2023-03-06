@@ -6,17 +6,19 @@
 //
 
 import UIKit
+import Combine
 
 final class TextFieldFormComponent: FormComponent {
+    var subject: CurrentValueSubject<String, Never>
+
     let placeholder: String
-    let defaultValue: String?
     let editable: Bool
     let keyboardType: UIKeyboardType
 
-    init(placeholder: String, keyboardType: UIKeyboardType = .default, defaultValue: String? = nil, editable: Bool = false) {
+    init(placeholder: String, keyboardType: UIKeyboardType = .default, defaultValue: CurrentValueSubject<String, Never>, editable: Bool = false) {
         self.placeholder = placeholder
         self.keyboardType = keyboardType
-        self.defaultValue = defaultValue
+        self.subject = defaultValue
         self.editable = editable
     }
 }

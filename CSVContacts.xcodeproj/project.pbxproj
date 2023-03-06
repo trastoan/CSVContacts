@@ -35,6 +35,7 @@
 		DA84339929B3D49000CB87C6 /* FormTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339829B3D49000CB87C6 /* FormTextCollectionViewCell.swift */; };
 		DA84339B29B3D69600CB87C6 /* ContactDetailsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339A29B3D69600CB87C6 /* ContactDetailsLayout.swift */; };
 		DA84339D29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339C29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift */; };
+		DA84339F29B55FF300CB87C6 /* EditableContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339E29B55FF300CB87C6 /* EditableContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		DA84339829B3D49000CB87C6 /* FormTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA84339A29B3D69600CB87C6 /* ContactDetailsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsLayout.swift; sourceTree = "<group>"; };
 		DA84339C29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA84339E29B55FF300CB87C6 /* EditableContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			children = (
 				DA84339229B3CE9600CB87C6 /* FormModel.swift */,
 				DA84339429B3CFD700CB87C6 /* FormComponents.swift */,
+				DA84339E29B55FF300CB87C6 /* EditableContact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				DA84337B29B3A09400CB87C6 /* ContactSection.swift in Sources */,
 				DA84339129B3CC1900CB87C6 /* ContactDetailsViewController.swift in Sources */,
 				DA84337529B39AEB00CB87C6 /* ContactService.swift in Sources */,
+				DA84339F29B55FF300CB87C6 /* EditableContact.swift in Sources */,
 				DA84339D29B3E0CD00CB87C6 /* FormTitleCollectionViewCell.swift in Sources */,
 				DA84338629B3A64600CB87C6 /* UIViewExtensions.swift in Sources */,
 				DA84338029B3A43900CB87C6 /* ContactListTableViewCell.swift in Sources */,
