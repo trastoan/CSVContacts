@@ -37,6 +37,9 @@
 		DA84339F29B55FF300CB87C6 /* EditableContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84339E29B55FF300CB87C6 /* EditableContact.swift */; };
 		DA84340829B620B600CB87C6 /* ContactServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84340729B620B600CB87C6 /* ContactServiceTests.swift */; };
 		DA84340D29B6265100CB87C6 /* sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = DA84340C29B6265100CB87C6 /* sample.csv */; };
+		DA84341129B62BE700CB87C6 /* ContactListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341029B62BE700CB87C6 /* ContactListViewModelTests.swift */; };
+		DA84341329B62C8100CB87C6 /* ContactListSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341229B62C8100CB87C6 /* ContactListSpies.swift */; };
+		DA84341629B62CD500CB87C6 /* ContactsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341529B62CD500CB87C6 /* ContactsMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		DA84339E29B55FF300CB87C6 /* EditableContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableContact.swift; sourceTree = "<group>"; };
 		DA84340729B620B600CB87C6 /* ContactServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactServiceTests.swift; sourceTree = "<group>"; };
 		DA84340C29B6265100CB87C6 /* sample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.csv; sourceTree = "<group>"; };
+		DA84341029B62BE700CB87C6 /* ContactListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTests.swift; sourceTree = "<group>"; };
+		DA84341229B62C8100CB87C6 /* ContactListSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSpies.swift; sourceTree = "<group>"; };
+		DA84341529B62CD500CB87C6 /* ContactsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 		DA84334429B3748900CB87C6 /* CSVContactsTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA84341429B62CC600CB87C6 /* Mocks */,
+				DA84340E29B62BD100CB87C6 /* Modules */,
 				DA84340929B620BF00CB87C6 /* Resources */,
 				DA84340629B6209900CB87C6 /* Services */,
 			);
@@ -319,6 +327,31 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DA84340E29B62BD100CB87C6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DA84340F29B62BD800CB87C6 /* ContactList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DA84340F29B62BD800CB87C6 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				DA84341029B62BE700CB87C6 /* ContactListViewModelTests.swift */,
+				DA84341229B62C8100CB87C6 /* ContactListSpies.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		DA84341429B62CC600CB87C6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DA84341529B62CD500CB87C6 /* ContactsMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,7 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA84341329B62C8100CB87C6 /* ContactListSpies.swift in Sources */,
 				DA84340829B620B600CB87C6 /* ContactServiceTests.swift in Sources */,
+				DA84341629B62CD500CB87C6 /* ContactsMock.swift in Sources */,
+				DA84341129B62BE700CB87C6 /* ContactListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
