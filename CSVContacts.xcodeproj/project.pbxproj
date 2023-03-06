@@ -41,6 +41,7 @@
 		DA84341329B62C8100CB87C6 /* ContactListSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341229B62C8100CB87C6 /* ContactListSpies.swift */; };
 		DA84341629B62CD500CB87C6 /* ContactsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341529B62CD500CB87C6 /* ContactsMock.swift */; };
 		DA84341A29B6472100CB87C6 /* EditableContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341929B6472100CB87C6 /* EditableContactTests.swift */; };
+		DA84341C29B648C200CB87C6 /* FormComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341B29B648C200CB87C6 /* FormComponentsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		DA84341229B62C8100CB87C6 /* ContactListSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSpies.swift; sourceTree = "<group>"; };
 		DA84341529B62CD500CB87C6 /* ContactsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMock.swift; sourceTree = "<group>"; };
 		DA84341929B6472100CB87C6 /* EditableContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableContactTests.swift; sourceTree = "<group>"; };
+		DA84341B29B648C200CB87C6 /* FormComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComponentsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				DA84341929B6472100CB87C6 /* EditableContactTests.swift */,
+				DA84341B29B648C200CB87C6 /* FormComponentsTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				DA84341329B62C8100CB87C6 /* ContactListSpies.swift in Sources */,
 				DA84340829B620B600CB87C6 /* ContactServiceTests.swift in Sources */,
 				DA84341629B62CD500CB87C6 /* ContactsMock.swift in Sources */,
+				DA84341C29B648C200CB87C6 /* FormComponentsTests.swift in Sources */,
 				DA84341129B62BE700CB87C6 /* ContactListViewModelTests.swift in Sources */,
 				DA84341A29B6472100CB87C6 /* EditableContactTests.swift in Sources */,
 			);
