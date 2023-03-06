@@ -23,11 +23,10 @@ class ContactDetailsRouter: ContactDetailsRouterProtocol {
         controller.model = model
         router.viewController = controller
 
-        let nav = UINavigationController(rootViewController: controller)
-        return nav
+        return controller
     }
 
     func dismiss() {
-        viewController?.dismiss(animated: true)
+        viewController?.navigationController?.popViewController(animated: true)
     }
 }

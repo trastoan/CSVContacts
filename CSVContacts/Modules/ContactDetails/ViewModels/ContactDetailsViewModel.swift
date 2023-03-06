@@ -12,7 +12,7 @@ protocol ContactDetailsModel {
     var contact: Contact { get }
     var content: [FormSectionComponent] { get }
     var editButtonTitle: String { get }
-    var leftButtonTitle: String { get }
+    var leftButtonTitle: String? { get }
 
     func toggleEditMode()
     func cancelAction()
@@ -25,7 +25,7 @@ class ContactDetailsViewModel: ContactDetailsModel {
 
     var editableContact: EditableContact
     var editButtonTitle: String { isEditing ? "Done" : "Edit"}
-    var leftButtonTitle: String { isEditing ? "Cancel" : "Close" }
+    var leftButtonTitle: String? { isEditing ? "Cancel" : nil }
 
     private (set) var content: [FormSectionComponent] = []
     private var isEditing = false

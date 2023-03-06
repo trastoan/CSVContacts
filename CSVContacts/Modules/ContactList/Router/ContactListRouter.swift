@@ -29,6 +29,6 @@ final class ContactListRouter: ContactListRouterProtocol {
 
     func presentDetailsFor(contact: Contact) {
         let destination = ContactDetailsRouter.assembleModule(with: contact)
-        viewController?.present(destination, animated: true)
+        viewController?.navigationController?.pushViewController(destination, animated: true)
     }
 }

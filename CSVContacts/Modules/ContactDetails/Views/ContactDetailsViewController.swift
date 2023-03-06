@@ -64,14 +64,17 @@ class ContactDetailsViewController: UIViewController, ContactDetailsView {
         let editButton = UIBarButtonItem(title: editButtonTitle, primaryAction: editAction)
         navigationItem.rightBarButtonItem = editButton
 
-        let leftButtonTitle = model.leftButtonTitle
-        let cancelAction = UIAction { [weak self] _ in
-            self?.model.cancelAction()
-            self?.updateDataSource()
-            self?.setupNavigationButtons()
+        if let leftButtonTitle = model.leftButtonTitle {
+            let cancelAction = UIAction { [weak self] _ in
+                self?.model.cancelAction()
+                self?.updateDataSource()
+                self?.setupNavigationButtons()
+            }
+            let cancelButton = UIBarButtonItem(title: leftButtonTitle, primaryAction: cancelAction)
+            navigationItem.leftBarButtonItem = cancelButton
+        } else {
+            navigationItem.leftBarButtonItem = nil
         }
-        let cancelButton = UIBarButtonItem(title: leftButtonTitle, primaryAction: cancelAction)
-        navigationItem.leftBarButtonItem = cancelButton
 
     }
 

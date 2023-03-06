@@ -34,6 +34,10 @@ class ContactListViewController: UIViewController, ContactListView {
         super.loadView()
         setupTable()
         setupBindings()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         model.loadContacts()
     }
 
