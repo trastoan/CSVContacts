@@ -40,6 +40,7 @@
 		DA84341129B62BE700CB87C6 /* ContactListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341029B62BE700CB87C6 /* ContactListViewModelTests.swift */; };
 		DA84341329B62C8100CB87C6 /* ContactListSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341229B62C8100CB87C6 /* ContactListSpies.swift */; };
 		DA84341629B62CD500CB87C6 /* ContactsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341529B62CD500CB87C6 /* ContactsMock.swift */; };
+		DA84341A29B6472100CB87C6 /* EditableContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84341929B6472100CB87C6 /* EditableContactTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		DA84341029B62BE700CB87C6 /* ContactListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTests.swift; sourceTree = "<group>"; };
 		DA84341229B62C8100CB87C6 /* ContactListSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListSpies.swift; sourceTree = "<group>"; };
 		DA84341529B62CD500CB87C6 /* ContactsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsMock.swift; sourceTree = "<group>"; };
+		DA84341929B6472100CB87C6 /* EditableContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableContactTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 		DA84340E29B62BD100CB87C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DA84341729B6470700CB87C6 /* ContactDetails */,
 				DA84340F29B62BD800CB87C6 /* ContactList */,
 			);
 			path = Modules;
@@ -350,6 +353,22 @@
 				DA84341529B62CD500CB87C6 /* ContactsMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DA84341729B6470700CB87C6 /* ContactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DA84341829B6471400CB87C6 /* Models */,
+			);
+			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+		DA84341829B6471400CB87C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA84341929B6472100CB87C6 /* EditableContactTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +511,7 @@
 				DA84340829B620B600CB87C6 /* ContactServiceTests.swift in Sources */,
 				DA84341629B62CD500CB87C6 /* ContactsMock.swift in Sources */,
 				DA84341129B62BE700CB87C6 /* ContactListViewModelTests.swift in Sources */,
+				DA84341A29B6472100CB87C6 /* EditableContactTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
