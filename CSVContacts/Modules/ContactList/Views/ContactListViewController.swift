@@ -26,11 +26,18 @@ class ContactListViewController: UIViewController, ContactListView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Contacts List"
+        title = model.title
         view.backgroundColor = .systemBackground
+    }
 
+    override func loadView() {
+        super.loadView()
         setupTable()
         setupBindings()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         model.loadContacts()
     }
 

@@ -53,3 +53,4 @@ extension Contact: CSVDecodable {
     }
 }
 
+extension Contact: Equatable {}

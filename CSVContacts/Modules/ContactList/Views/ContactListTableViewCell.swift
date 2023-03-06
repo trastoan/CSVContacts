@@ -25,7 +25,7 @@ class ContactListTableViewCell: UITableViewCell {
     func setup(_ contact: Contact) {
         self.selectionStyle = .none
         self.accessoryType = .disclosureIndicator
-        contactTitleLabel.text = contact.nameComponents.formatted(.name(style: .long))
+        contactTitleLabel.text = contact.nameComponents.formatted()
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
